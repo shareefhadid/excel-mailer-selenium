@@ -1,0 +1,10 @@
+.git
+.env
+db_data
+attachments
+node_modules
+client/node_modules
+/server/scripts/.vscode
+attachments
+/server/scripts/attachments
+/server/scripts/venv
