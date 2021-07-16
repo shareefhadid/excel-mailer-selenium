@@ -36,8 +36,11 @@ def run_automation(path):
                 i+=1
         data.append(data_item)
 
+    print(data)
+
     for item in data:
         search = driver.find_element_by_css_selector('input[name="q"]')
-        search.send_keys(item["col a"], item["col b"], ", " )
+        for key, val in item.items():
+            search.send_keys(val)
 
 run_automation(excel_path)
